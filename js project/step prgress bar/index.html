@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step Progress Bar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1>Step Progress Bar</h1>
+        <div class="progress-container">
+            <hr class="progress-bar-back">
+            <hr class="progress-bar-front">
+            <div class="step checked">
+                <i class="fa-solid fa-check"></i>
+                <small>Start</small>
+            </div>
+            <div class="step">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="step">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="step">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="step">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="step">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+        <button class="btn"  id="prev" disabled>
+            <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <button class="btn" id="next"><i class="fa-solid fa-arrow-right"></i>
+        </button>
+    </div>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>

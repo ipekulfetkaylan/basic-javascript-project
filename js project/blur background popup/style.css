@@ -1,0 +1,91 @@
+body{
+    margin:0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+h1{
+    color: whitesmoke;
+    font-size: 60px;
+    letter-spacing: 4px;
+    text-shadow: 2px 4px 4px rgba(0,0,0,.4);
+}
+
+.btn{
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 200px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .4s;
+}
+.btn:hover{
+    filter: brightness(.8);
+}
+.active.container{
+
+    filter: blur(5px) brightness(.7);
+}
+.popup-container{
+    position: fixed;
+    transform: translate(-50%);
+    left: 50%;
+    width: 400px;
+    height: 200px;
+    top: 30%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,.4);
+    transition: all.7s;
+    opacity: 1;
+}
+
+h4{
+    font-size: 30px;
+    margin: 10px 0;
+    color: darkred;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.popup-btn{
+    background-color: orange;
+    padding: 5px;
+    border: none;
+    font-size: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.input{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid orange;
+    font-size: 20px;
+    text-align: center;
+}
+.close-icon{
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+.active.popup-container{
+    visibility: hidden;
+    opacity: 0;
+    top: 10%;
+}
+
+/* popup ın yukardan aşağı açılmasını sağlamak için hem opacity değişti hem de top: 10% verdik popupcontainer top: 30% du. */

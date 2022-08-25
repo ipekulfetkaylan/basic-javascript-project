@@ -1,0 +1,66 @@
+body{
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1{
+    font-size: 80px;
+    color: white;
+    backdrop-filter: brightness(.5);
+    letter-spacing: 4px;
+}
+.split{
+    width: 50%;
+    height: 100%;
+    top:0;
+    white-space: nowrap;
+}
+.split.left{
+    position: absolute;
+    left:0;
+    background-color: pink;
+    background-image: url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-finish-select-202207-6-1inch-midnight?wid=2560&hei=1440&fmt=jpeg&qlt=95&.v=1656712887881");
+    background-size: cover;
+    background-position: center;
+}
+.split.right{
+    position: absolute;
+    right: 0;
+    background-color: lightskyblue;
+    background-image: url("https://images.samsung.com/is/image/samsung/p6pim/my/2202/gallery/my-galaxy-a53-5g-a536-sm-a536ezkhxme-531434787?$650_519_PNG$");
+    background-size:cover ;
+    background-position: center;
+
+}
+.active-left .left{
+    width: 75%;
+}
+.active-left .right{
+    width: 25%;
+}
+.active-right .left{
+    width: 25%;
+}
+.active-right .right{
+    width: 75%;
+}
+.left , .right{
+    transition: width 2s ease-in-out;
+}
+.btn{
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+    font-size: 25px;
+    border: 4px solid;
+    cursor: pointer;
+    transition: background-color .7s;
+}
+.btn:hover{
+    background-color: white;
+    color:black;
+}

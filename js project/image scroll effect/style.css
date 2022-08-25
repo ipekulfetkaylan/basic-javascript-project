@@ -1,0 +1,29 @@
+body{
+    margin:0;
+    font-family: sans-serif;
+}
+.bg-image{
+    height: 100vh;
+    width: 100%;
+    background: url("https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-size: 160%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+.container{
+    padding: 50px;
+}
+h1{
+    font-size: 50px;
+
+}
+p{
+    color: gray;
+}
+@media (max-width: 500px) {
+    .container{
+        padding: 10px;
+    }
+}
